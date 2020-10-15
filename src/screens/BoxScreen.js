@@ -5,20 +5,43 @@ const BoxScreen = () => {
 
     return (
         <View style={styles.viewStyle}>
-            <Text style={styles.textStyle}>Box Screen </Text>
+            <View style={styles.childOneStyle}></View>
+            <View style={styles.childTwoStyle}></View>
+            <View style={styles.childThreeStyle}></View>
+
         </View>
     );
 };
 
 const styles = StyleSheet.create({
 viewStyle:{
-    borderWidth:1,
-    borderColor: 'black'
+    
+    borderWidth:3,
+    borderColor: 'black',
+    height:200,
+    flexDirection:'row',
+    justifyContent: 'space-between'
+    
+    
 },
-textStyle:{
-    borderWidth: 1, 
+childOneStyle:{
+    height:50,
+    width:50,
+    backgroundColor:'purple',
+},
+childTwoStyle:{
+    height:50,
+    width:50,
+    backgroundColor:'black',
+    top: 50
+   
+},
+childThreeStyle:{
+    height:50,
+    width:50,
+    backgroundColor: "blue",
     borderColor: 'red',
-    margin: 20
+
 }
 });
 
